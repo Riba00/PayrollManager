@@ -73,22 +73,72 @@ export default {
 
 <style lang="scss" scoped>
 .payroll-list {
+  margin: 20px 0;
+  
   &__not-found {
     text-align: center;
     font-size: 20px;
+    color: #b0b0b0; // Color más suave para el mensaje
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
   }
 
   &__payroll {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 15px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
 
     p {
       margin: 0;
-      text-transform: uppercase;
+      font-size: 16px;
       font-weight: bold;
+      color: #333333; // Un color más oscuro para el texto
+    }
+  }
+
+  .action {
+    display: flex;
+    gap: 10px;
+
+    a {
+      background-color: #21ba45;
+      color: #fff;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #16ab39;
+      }
+    }
+
+    button {
+      background-color: #db2828;
+      color: #fff;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #c12727;
+      }
     }
   }
 }
 </style>
+
