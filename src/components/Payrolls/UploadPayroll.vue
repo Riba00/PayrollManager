@@ -22,7 +22,7 @@
     <div class="field">
       <div class="ui calendar">
         <div class="ui input left icon">
-          <input type="date" @change="onChangeDate" />
+          <input type="date" @change="onChangeDate" :value="date" />
         </div>
       </div>
     </div>
